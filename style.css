@@ -1,0 +1,80 @@
+body {
+    font-family: 'Roboto Mono', monospace; 
+    margin: 0;
+    line-height: 1.6;
+    background-color: #1a1a1a; 
+    color: #e0e0e0;
+}
+
+.gold-text { color: #d8ab3d; }
+.container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+
+.navbar {
+    background-color: #770048; 
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 3px solid #d8ab3d;
+    position: sticky; top: 0; z-index: 1000;
+}
+
+.navbar a {
+    color: white; text-decoration: none; margin: 0 20px; font-weight: bold;
+    text-transform: uppercase;
+}
+.navbar a:hover, .navbar a.active { color: #d8ab3d; }
+
+.hero-header {
+    background-color: #121212; 
+    height: 80vh; 
+    display: flex; justify-content: center; align-items: center;
+    text-align: center; color: white;
+  
+}
+
+.hero-content h1 { font-size: 5rem; margin: 0; font-family: 'Orbitron', sans-serif; }
+.hero-content p { font-size: 1.2rem; border-bottom: 1px solid #d8ab3d; padding-bottom: 1rem; }
+
+.btn {
+    padding: 15px 30px; margin-top: 20px;
+    border: 2px solid #d8ab3d; 
+    background-color: transparent;
+    color: #d8ab3d;
+    cursor: pointer; font-family: inherit; font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #d8ab3d;
+    color: #1a1a1a;
+}
+
+section {
+    background: #ffffff; 
+    color: #1a1a1a;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+h2 { color: #770048; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px; margin-top: 25px;
+}
+
+.image-box { border: 1px solid #ddd; padding: 15px; border-radius: 8px; text-align: center; }
+
+.image-box img { width: 100%; height: 200px; object-fit: cover; border-radius: 5px; }
+
+.image-box p { font-size: 0.9rem; color: #555; margin-top: 15px; }
+
+footer {
+    background-color: #d8ab3d; 
+    color: #770048; 
+    padding: 30px 20px; text-align: center;
+}
+footer a { color: #770048; font-weight: bold; }
