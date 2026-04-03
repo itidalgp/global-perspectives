@@ -136,18 +136,40 @@ Saad Faisal</p>
                     <p>Another place where we pasted our posters.</p>
                 </div>
             </div>
+ </section> 
 
-    <div class="action-area">
-    <a href="mailto:imranmohid861@gmail.com Report">
-        <button id="reportBtn" class="btn">REPORT A VIOLATION</button>
-    </a>
-</div>
+        <div class="action-area" style="text-align: center; padding-bottom: 50px;">
+            <a href="mailto:imranmohid861@://gmail.com Report">
+                <button id="reportBtn" class="btn">REPORT A VIOLATION</button>
+            </a>
+        </div>
+    </main>
+
+    <div id="statusPopup" class="popup-message">
+        Great! Your violation has been reported.
+    </div>
+
     <footer>
         <p>&copy; 2026 Itidal.gp | Protecting the Landscape</p>
         <div class="social-links">
             <a href="https://www.instagram.com/itidal.gp/">Our Instagram Page</a>
         </div>
     </footer>
+
+    <script>
+        const reportBtn = document.getElementById('reportBtn');
+        const statusPopup = document.getElementById('statusPopup');
+
+        if (reportBtn) {
+            reportBtn.addEventListener('click', function() {
+                statusPopup.classList.add('show');
+                
+                setTimeout(function() {
+                    statusPopup.classList.remove('show');
+                }, 3000);
+            });
+        }
+    </script>
 
     <script src="script.js"></script>
 </body>
